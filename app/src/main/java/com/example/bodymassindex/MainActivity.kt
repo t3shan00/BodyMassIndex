@@ -25,6 +25,7 @@ import androidx.compose.ui.unit.sp
 import androidx.compose.runtime.setValue
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.tooling.preview.Preview
 import com.example.bodymassindex.ui.theme.BodyMassIndexTheme
 
 class MainActivity : ComponentActivity() {
@@ -90,5 +91,13 @@ fun Bmi(modifier: Modifier = Modifier){
                 .fillMaxWidth()
                 .padding(start = 16.dp, top = 16.dp)
         )
+    }
+}
+
+@Preview(showBackground = true)
+@Composable
+fun BmiPreview() {
+    BodyMassIndexTheme{
+        Bmi()
     }
 }
